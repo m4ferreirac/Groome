@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Groome</string>
+    <string name="intro_title">Let\'s Find<font color='#F3C024'> the Best &amp; Healthy</font> Grocery</string>
+    <string name="sign_in_underlined"><u>Sign In</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

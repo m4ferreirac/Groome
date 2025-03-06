@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "796367093990",
+    "project_id": "connectify-13721",
+    "storage_bucket": "connectify-13721.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796367093990:android:01af339df12b7c072dfb27",
+        "android_client_info": {
+          "package_name": "net.m4.onlineshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrUrpow3ToBzn6ohV0JEdyc-uq0Ho0hco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

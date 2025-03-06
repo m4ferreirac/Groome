@@ -1,13 +1,9 @@
 # 🛍️ Groome - Aplicação de Compras  
 
 **Groome** é um aplicativo de compras onde os utilizadores podem explorar produtos, adicioná-los ao carrinho, guardar favoritos e finalizar compras na app.  
-
----
-
-## 📸 Capturas de Tela  
-*(Adicione imagens da interface do app aqui quando possível)*  
-
----
+<p align="center">
+  <img src="screenshots/main.webp" alt="Principal" width="500"/>
+</p>
 
 ## 🚀 Funcionalidades  
 
@@ -26,15 +22,13 @@
 
 🔹 **Linguagem:** Java  
 🔹 **Framework:** Android SDK  
-🔹 **Autenticação:** Firebase Authentication (com verificação de e-mail)  
+🔹 **Autenticação:** Firebase Authentication  
 🔹 **Base de Dados:** Firebase Realtime Database  
 🔹 **Armazenamento:** Firebase Storage  
 
 ---
 
-## 📦 Como Rodar o Projeto  
+## 📦 Clonar o Repositório
 
-### 1️⃣ Clonar o Repositório  
 ```bash
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
-cd NOME_DO_REPOSITORIO
+git clone https://github.com/m4ferreirac/Groome.git

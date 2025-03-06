@@ -2,20 +2,11 @@ package net.m4.onlineshop.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
-import net.m4.onlineshop.R;
 import net.m4.onlineshop.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
@@ -50,8 +41,13 @@ public class LoginActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         FirebaseUser user = mAuth.getCurrentUser();
                         if (user != null) {
-                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                            finish();
+                            if (user.isEmailVerified()) {
+                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                finish();
+                            } else {
+                                Snackbar.make(binding.getRoot(), "Please verify your email before logging in.", Snackbar.LENGTH_LONG).show();
+                                FirebaseAuth.getInstance().signOut();
+                            }
                         }
                     } else {
                         String errorMessage = task.getException() != null ? task.getException().getMessage() : "Authentication failed";
